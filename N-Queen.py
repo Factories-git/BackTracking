@@ -13,12 +13,12 @@ def Queen(chess, q_c):
             chess[n_][i] = True
             Change(chess, [n_, i])
             n_ += 1
-            q_c += 1
-            Queen(chess, q_c)
+            Queen(chess, q_c+1)
     if q_c == n and not all(all(r) for r in chess):
         c += 1
         return
-    else:return
+    else:
+        return
 
 
 def Change(chess, queen):
@@ -35,5 +35,7 @@ def Change(chess, queen):
                 chess[_][__] = True
 
 
-Queen(chess, 0)
+for i in range(n):
+    for j in range(n):
+        Queen(chess, 0)
 print(c)
