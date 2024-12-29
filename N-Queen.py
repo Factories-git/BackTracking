@@ -1,19 +1,16 @@
 n = int(input())
 count = 0
 chess = [[False] * n for i in range(n)]
-n_ = 0
 c = 0
-
-def Queen(chess, q_c):
-    global n_, c
+def Queen(chess, n_, q_c):
+    global c
     if n_ == n:
         return
     for i in range(n):
         if not chess[n_][i]:
             chess[n_][i] = True
-            Change(chess, [n_, i])
-            n_ += 1
-            Queen(chess, q_c+1)
+            Change(chess, [n_, i], n_)
+            Queen(chess, q_c+1, n_)
     if q_c == n and not all(all(r) for r in chess):
         c += 1
         return
@@ -21,7 +18,7 @@ def Queen(chess, q_c):
         return
 
 
-def Change(chess, queen):
+def Change(chess, queen, n_):
     tar = queen[0] + queen[1]
     for i in range(n):
         chess[n_][i] = True
@@ -36,6 +33,6 @@ def Change(chess, queen):
 
 
 for i in range(n):
-    for j in range(n):
-        Queen(chess, 0)
+    chess = [[False] * n for _ in range(n)]
+    Queen(chess, i, 0)
 print(c)

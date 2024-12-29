@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6646c8f-7058-4891-9e6c-c9ad9b18a276" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/N-Queen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f6646c8f-7058-4891-9e6c-c9ad9b18a276" name="변경" comment="BackTracking">
+      <change beforePath="$PROJECT_DIR$/N-Queen.py" beforeDir="false" afterPath="$PROJECT_DIR$/N-Queen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +84,27 @@
       <option name="presentableId" value="Default" />
       <updated>1733619146903</updated>
     </task>
+    <task id="LOCAL-00001" summary="BackTracking">
+      <option name="closed" value="true" />
+      <created>1735444968007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735444968007</updated>
+    </task>
+    <task id="LOCAL-00002" summary="BackTracking">
+      <option name="closed" value="true" />
+      <created>1735445129039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735445129039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BackTracking" />
+    <option name="LAST_COMMIT_MESSAGE" value="BackTracking" />
   </component>
 </project>
