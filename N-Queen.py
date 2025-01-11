@@ -1,38 +1,30 @@
 n = int(input())
-count = 0
-chess = [[False] * n for i in range(n)]
-c = 0
-def Queen(chess, n_, q_c):
-    global c
-    if n_ == n:
-        return
-    for i in range(n):
-        if not chess[n_][i]:
-            chess[n_][i] = True
-            Change(chess, [n_, i], n_)
-            Queen(chess, q_c+1, n_)
-    if q_c == n and not all(all(r) for r in chess):
-        c += 1
-        return
-    else:
-        return
 
 
-def Change(chess, queen, n_):
-    tar = queen[0] + queen[1]
-    for i in range(n):
-        chess[n_][i] = True
-    for i in range(n):
-        chess[i][n_] = True
-    for _ in range(n):
-        chess[_][_] = True
-    for _ in range(n):
-        for __ in range(n):
-            if _ + __ == tar:
-                chess[_][__] = True
+def Solve(n):
+    count = 0
+
+    def Is_safe(row, col):
+        return not cols[col] and not diagonal[row + col] and not re_diagonal[row - col]
+
+    def Queen(y):
+        nonlocal count
+        if y == n:
+            count += 1
+            return
+        for i in range(n):
+            if Is_safe(y, i):
+                cols[i] = diagonal[y + i] = re_diagonal[y - i] = True
+                Queen(y + 1)
+                cols[i] = diagonal[y + i] = re_diagonal[y - i] = False
+
+    cols = [False] * n
+    diagonal = [False] * (2 * n - 1)
+    re_diagonal = [False] * (2 * n - 1)
+    c = 0
+
+    Queen(0)
+    return count
 
 
-for i in range(n):
-    chess = [[False] * n for _ in range(n)]
-    Queen(chess, i, 0)
-print(c)
+print(Solve(n))
