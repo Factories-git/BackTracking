@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6646c8f-7058-4891-9e6c-c9ad9b18a276" name="변경" comment="BackTracking">
-      <change afterPath="$PROJECT_DIR$/N과 M (1).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/N과 M (3).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/N과 M (4).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/스타트와 링크.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/N-Queen.py" beforeDir="false" afterPath="$PROJECT_DIR$/N-Queen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/스타트와 링크.py" beforeDir="false" afterPath="$PROJECT_DIR$/스타트와 링크.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736169295796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="BackTracking">
+      <option name="closed" value="true" />
+      <created>1736639106158</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736639106158</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -10,4 +10,10 @@ def backtracking(start, rink, x, y):
     for i in range(n):
         if i == x:
             continue
-        start += ability[i][x] + ability[x][i]
+        if i not in rink and len(start) <= n//2:
+            start.append(i)
+    for j in range(n):
+        if j == x:
+            continue
+        if j not in start and len(rink) <= n//2:
+            rink.append(j)
