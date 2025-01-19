@@ -1,12 +1,13 @@
 n = int(input())
 chess = [list(map(int, input().split())) for _ in range(n)]
 ans = 0
+diagonal = [False] * (2 * n - 1)
+re_diagonal = [False] * (2 * n - 1)
 
 
 def solve(y, c):
     global ans
-    diagonal = [False] * (2 * n - 1)
-    re_diagonal = [False] * (2 * n - 1)
+
     if y == n:
         ans = max(ans, c)
         return
@@ -19,8 +20,6 @@ def solve(y, c):
             diagonal[y + i] = re_diagonal[y - i] = True
             solve(y + 1, c + 1)
             diagonal[y + i] = re_diagonal[y - i] = False
-
-    solve(y + 1, c)
 
 
 solve(0, 0)
