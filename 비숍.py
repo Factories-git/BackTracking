@@ -3,48 +3,25 @@ chess = [list(map(int, input().split())) for _ in range(n)]
 ans = 0
 
 
-def Solve(n):
-    c = 0
+def solve(y, c):
+    global ans
+    diagonal = [False] * (2 * n - 1)
+    re_diagonal = [False] * (2 * n - 1)
+    if y == n:
+        ans = max(ans, c)
+        return
+
     def is_safe(x, y):
-        return not chess[x][y]
+        return not diagonal[x + y] and not re_diagonal[x - y]
 
-    def synchronize(x, y):
-        global chess
-
-        tar = x + y
-        for i in range(n):
-            chess[i][i] = 0
-        for i in range(n):
-            for j in range(n):
-                if i + j == tar:
-                    chess[i][j] = 0
-
-
-    def arrangement(y):
-        global ans
-
-        if y == n:
-            ans = max(ans, c)
-            return
-        for i in range(n):
-            if is_safe(y, i):
-                pass
-
-def synchronize(x, y):
-    ret = []
-
-    tar = x + y
-    tar2 = x - y
     for i in range(n):
-        for j in range(n):
-            if i + j == tar:
-                if chess[i][j] == 1:
-                    ret.append((i, j))
-            elif i - j == tar2:
-                if chess[i][j] == 1:
-                    ret.append((i, j))
+        if is_safe(y, i):
+            diagonal[y + i] = re_diagonal[y - i] = True
+            solve(y + 1, c + 1)
+            diagonal[y + i] = re_diagonal[y - i] = False
 
-    return ret
+    solve(y + 1, c)
 
 
-print(synchronize(0, 2))
+solve(0, 0)
+print(ans)
