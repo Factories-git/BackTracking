@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6646c8f-7058-4891-9e6c-c9ad9b18a276" name="변경" comment="BackTracking">
-      <change afterPath="$PROJECT_DIR$/2048 (Easy).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/동전 뒤집기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/외판원 순회 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/비숍.py" beforeDir="false" afterPath="$PROJECT_DIR$/비숍.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,41 +46,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.0 만들기.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2048 (Easy).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N-Queen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (11).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (12).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (3).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (4).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (5).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (6).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (7).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (8).executor&quot;: &quot;Run&quot;,
-    &quot;Python.N과 M (9).executor&quot;: &quot;Run&quot;,
-    &quot;Python.감소하는 수.executor&quot;: &quot;Run&quot;,
-    &quot;Python.감시 피하기.executor&quot;: &quot;Run&quot;,
-    &quot;Python.동전 뒤집기.executor&quot;: &quot;Run&quot;,
-    &quot;Python.로또.executor&quot;: &quot;Run&quot;,
-    &quot;Python.모음사전 (프로그래머스).executor&quot;: &quot;Run&quot;,
-    &quot;Python.모음사전.executor&quot;: &quot;Run&quot;,
-    &quot;Python.부분수열의 합.executor&quot;: &quot;Run&quot;,
-    &quot;Python.비숍.executor&quot;: &quot;Run&quot;,
-    &quot;Python.소수 찾기.executor&quot;: &quot;Run&quot;,
-    &quot;Python.스도쿠.executor&quot;: &quot;Run&quot;,
-    &quot;Python.스타트와 링크.executor&quot;: &quot;Run&quot;,
-    &quot;Python.암호 만들기(모듈 X).executor&quot;: &quot;Run&quot;,
-    &quot;Python.타겟 넘버 (프로그래머스).executor&quot;: &quot;Run&quot;,
-    &quot;Python.회문수.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.0 만들기.executor": "Run",
+    "Python.2048 (Easy).executor": "Run",
+    "Python.N-Queen.executor": "Run",
+    "Python.N과 M (1).executor": "Run",
+    "Python.N과 M (11).executor": "Run",
+    "Python.N과 M (12).executor": "Run",
+    "Python.N과 M (2).executor": "Run",
+    "Python.N과 M (3).executor": "Run",
+    "Python.N과 M (4).executor": "Run",
+    "Python.N과 M (5).executor": "Run",
+    "Python.N과 M (6).executor": "Run",
+    "Python.N과 M (7).executor": "Run",
+    "Python.N과 M (8).executor": "Run",
+    "Python.N과 M (9).executor": "Run",
+    "Python.감소하는 수.executor": "Run",
+    "Python.감시 피하기.executor": "Run",
+    "Python.동전 뒤집기.executor": "Run",
+    "Python.로또.executor": "Run",
+    "Python.모음사전 (프로그래머스).executor": "Run",
+    "Python.모음사전.executor": "Run",
+    "Python.부분수열의 합.executor": "Run",
+    "Python.비숍.executor": "Run",
+    "Python.소수 찾기.executor": "Run",
+    "Python.스도쿠.executor": "Run",
+    "Python.스타트와 링크.executor": "Run",
+    "Python.암호 만들기(모듈 X).executor": "Run",
+    "Python.외판원 순회 2.executor": "Run",
+    "Python.타겟 넘버 (프로그래머스).executor": "Run",
+    "Python.회문수.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
-  <component name="RunManager" selected="Python.2048 (Easy)">
+}]]></component>
+  <component name="RunManager" selected="Python.외판원 순회 2">
+    <configuration name="외판원 순회 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BackTracking" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/외판원 순회 2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="감시 피하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BackTracking" />
       <option name="ENV_FILES" value="" />
@@ -141,28 +162,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/모음사전 (프로그래머스).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="감시 피하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BackTracking" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/감시 피하기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,6 +304,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.외판원 순회 2" />
         <item itemvalue="Python.2048 (Easy)" />
         <item itemvalue="Python.비숍" />
         <item itemvalue="Python.0 만들기" />
@@ -536,7 +536,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749342685526</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="BackTracking">
+      <option name="closed" value="true" />
+      <created>1749950689579</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1749950689579</updated>
+    </task>
+    <task id="LOCAL-00028" summary="BackTracking">
+      <option name="closed" value="true" />
+      <created>1749950712945</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1749950712945</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
